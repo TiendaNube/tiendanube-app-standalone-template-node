@@ -16,7 +16,7 @@ tiendanubeApiClient.interceptors.request.use(
     const { access_token } = userRepository.findOne(
       +config.url?.split("/")[0]!!
     );
-    config.headers["Authentication"] = `bearer ${access_token}`;
+    config.headers["Authorization"] = `Bearer ${access_token}`;
     return config;
   },
   function (error) {
