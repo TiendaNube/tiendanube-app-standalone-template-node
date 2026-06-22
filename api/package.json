@@ -3,6 +3,7 @@
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
+  "private": "true",
   "scripts": {
     "start:dev": "nodemon --watch 'src/**/*.ts' --watch './.env'",
     "start:db": "json-server --port 5000 --watch db.json"
